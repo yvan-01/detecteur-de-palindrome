@@ -3,6 +3,7 @@
 #include<stdlib.h>
 std::string mot,verif;
 int var=0,d;
+//enonciation des prototypes
 bool palindrome(std::string mot);
 std::string filtre(std::string mot);
 int length(std::string word);
@@ -17,6 +18,7 @@ int main(){
     }
     return 0;
 }
+//cette fonction verifie si cest un palindrome
 bool palindrome(std::string mot){
     int debut = 0;
     int fin = mot.length()-1;
@@ -29,6 +31,7 @@ bool palindrome(std::string mot){
     }
     return true;
 }
+//cette fonction permet de filtrer la chaine
 std::string filtre(std::string mot){
 int taille = length(mot),i=0;
 std::string final="";
@@ -39,6 +42,7 @@ final += mot[i];
 }
 return final;
 }
+//cette fonction permet de donner la taille dune chaine
 int length(std::string word)
 {
     int j = 0; 
