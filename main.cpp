@@ -4,11 +4,11 @@
 std::string mot,verif;
 int var=0,d;
 //enonciation des prototypes
-bool palindrome(std::string mot);
+bool Palindrome(std::string mot);
 std::string filtre(std::string mot);
 int length(std::string word);
 int main(){
-    std::cout<<"saisir l'expression :"<<std::endl;
+    std::cout<<"saisir l'expression : "<<std::endl;
     getline(std::cin,mot);
     verif = filtre(mot);
     if(palindrome(verif)){
@@ -19,7 +19,7 @@ int main(){
     return 0;
 }
 //cette fonction verifie si cest un palindrome
-bool palindrome(std::string mot){
+bool Palindrome(std::string mot){
     int debut = 0;
     int fin = mot.length()-1;
     while(debut<fin){
